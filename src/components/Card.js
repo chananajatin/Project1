@@ -1,12 +1,21 @@
 import React, { useState } from "react";
 import img1 from "../components/assets/2.jpg";
+import { CiShoppingCart } from "react-icons/ci"; // Import the cart icon from react-icons library
+import Modal from "./Modal"; // Import the Modal component
+import { FaTimes } from "react-icons/fa"; // Import the cross icon from react-icons library
 
 const Card = () => {
   const [isHovered, setIsHovered] = useState(false);
+  const [isAddedToCart, setIsAddedToCart] = useState(false);
+
+  const handleAddToCart = () => {
+    setIsAddedToCart(true);
+    setTimeout(() => setIsAddedToCart(false), 2000); // Reset added to cart message after 2 seconds
+  };
 
   return (
     <div
-      className="relative overflow-hidden "
+      className="relative overflow-hidden"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
@@ -20,15 +29,28 @@ const Card = () => {
         />
       </div>
 
-      <div className="bottom-0 left-0 right-0 m-1 p-1 ">
+      <div className="absolute bottom-0 right-0 m-4">
         <button
-          className={`p-1 transition-opacity ${
-            isHovered ? "opacity-100" : "opacity-0"
-          }`}
+          className="flex items-center justify-center  text-black  p-2 opacity-100 "
+          onClick={handleAddToCart}
         >
-          Add to cart
+          <CiShoppingCart />
         </button>
       </div>
+
+      {isAddedToCart && (
+        <Modal onClose={() => setIsAddedToCart(false)}>
+          <div className="text-center">
+            <p className="text-xl font-bold mb-2">Added to cart</p>
+            <button
+              className="absolute top-0 right-0 m-4 text-gray-500 hover:text-gray-700"
+              onClick={() => setIsAddedToCart(false)}
+            >
+              <FaTimes />
+            </button>
+          </div>
+        </Modal>
+      )}
     </div>
   );
 };
