@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import img1 from "../components/assets/2.jpg";
-import { CiShoppingCart } from "react-icons/ci"; // Import the cart icon from react-icons library
+import { MdAddShoppingCart } from "react-icons/md";
 
 const Card = () => {
   const [isAddedToCart, setIsAddedToCart] = useState(false);
@@ -17,7 +17,7 @@ const Card = () => {
       <div className="w-full h-full overflow-hidden relative">
         <img
           src={img1}
-          className="w-full transition-transform transform hover:scale-105"
+          className="w-full transition-transform transform rounded-md hover:scale-105"
           alt="Item"
         />
         {isAddedToCart && (
@@ -32,7 +32,8 @@ const Card = () => {
           className="flex items-center justify-center text-black p-2 opacity-100 hover:text-gray-700"
           onClick={handleAddToCart}
         >
-          <CiShoppingCart size={30} />
+          <MdAddShoppingCart size={25} />
+          
         </button>
       </div>
     </div>
