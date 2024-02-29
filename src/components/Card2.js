@@ -10,7 +10,7 @@ const Card2 = ({ image, name }) => {
   };
   return (
     <div>
-      <div className="mx-4 mt-4 w-40     h-64 bg-red-500  flex justify-center xl:w-96">
+      <div className="mx-4 mt-4 w-auto     h-64 bg-red-500  flex justify-center xl:w-96">
         <img className="w-full h-full object-cover" src={image} alt="Product" />
       </div>
       <div className="mx-3 my-0 px-1  flex justify-start">
