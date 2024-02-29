@@ -24,12 +24,12 @@ const Card2 = () => {
         <p className="py-2 text-sm font-thin">Latest collection Affordable</p>
       </div>
       <div className="mx-3 my-0 px-1  flex justify-start">
-        <h1>Nike Dunks</h1>
+        <h1>Sandal</h1>
       </div>
       <div className="mx-3 mt-2 px-1  flex justify-start">
         <div className="flex items-center">
-          <span className="text-gray-600 line-through mr-2">₹12000</span>
-          <span className="text-black font-bold mr-2">₹9999</span>
+          <span className="text-gray-600 line-through mr-2">₹1200</span>
+          <span className="text-black font-bold mr-2">₹999</span>
           <span className="text-black font-bold">(-18%)</span>
         </div>
       </div>
