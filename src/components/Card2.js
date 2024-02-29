@@ -14,7 +14,11 @@ const Card2 = () => {
         className="mx-4 mt-4
        w-auto  flex justify-center xl:w-96"
       >
-        <img className="w-auto h-auto" src={img1} alt="Product" />
+        <img
+          className="w-auto h-auto"
+          src="https://mulltiply-prod.s3.ap-south-1.amazonaws.com/uploads/2024/01/148a0ef2-b6d7-11ee-b10d-694ead45503e.webp"
+          alt="Product"
+        />
       </div>
       <div className="mx-4 my-0 px-1  flex justify-start">
         <p className="py-2 text-sm font-thin">Latest collection Affordable</p>
