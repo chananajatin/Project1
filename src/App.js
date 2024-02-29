@@ -1,11 +1,11 @@
 import React from "react";
-import Items from "./components/Items";
-const App = () =>  {
+import Items2 from "./components/Items2";
+const App = () => {
   return (
     <div>
-      <Items/>
+      <Items2 />
     </div>
   );
-}
+};
 
 export default App;
