@@ -3,7 +3,7 @@ import Card2 from "./Card2";
 
 const Items2 = () => {
   return (
-    <div className="flex flex-wrap mb-5 xl:justify-evenly">
+    <div className="flex flex-wrap justify-evenly">
       <Card2
         image={
           "https://mulltiply-prod.s3.ap-south-1.amazonaws.com/uploads/2024/01/48e9ddd2-b761-11ee-b10d-694ead45503e.webp"

@@ -20,24 +20,24 @@ const Card2 = ({ image, name }) => {
   };
 
   return (
-    <div className="">
-      <div className="mx-4 mt-4 w-40 h-28 bg-red-500  flex justify-center xl:w-96">
+    <div className="w-auto h-auto m-1 ">
+      <div className="mx-auto mt-4 w-36 h-28 bg-red-500  flex justify-center xl:w-96 xl:h-64">
         <img className="w-full h-full object-cover" src={image} alt="Product" />
       </div>
-      <div className="mx-3 my-0 px-1  flex justify-start">
+      <div className="mx-auto my-0 px-1  flex justify-start">
         <p className="py-2 text-sm font-thin">Latest collection </p>
       </div>
-      <div className="mx-3 my-0 px-1  flex justify-start">
+      <div className="mx-auto my-0 px-1  flex justify-start">
         <h1>{name}</h1>
       </div>
-      <div className="mx-3 mt-2 px-1  flex justify-start">
+      <div className="mx-auto mt-2 px-1  flex justify-start">
         <div className="flex items-center">
           <span className="text-gray-600 line-through mr-2">₹1200</span>
           <span className="text-black font-bold mr-2">₹999</span>
           <span className="text-black font-bold">(-18%)</span>
         </div>
       </div>
-      <div className="mx-3 mt-2 px-1 flex justify-between items-center">
+      <div className="mx-auto mt-2  flex justify-between items-center">
         {isDropdownOpen ? (
           <div className="absolute top-10 right-0 z-10 bg-white border border-gray-400 p-2">
             <p className="text-gray-600 mb-1">Select Size:</p>
