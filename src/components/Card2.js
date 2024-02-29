@@ -2,7 +2,7 @@ import React from "react";
 import img1 from "../components/assets/3.jpg";
 import { RiHeartLine, RiHeartFill } from "react-icons/ri";
 
-const Card2 = () => {
+const Card2 = ({ image, name }) => {
   const [isWishlist, setIsWishlist] = React.useState(false);
 
   const toggleWishlist = () => {
@@ -10,21 +10,14 @@ const Card2 = () => {
   };
   return (
     <div>
-      <div
-        className="mx-4 mt-4
-       w-auto  flex justify-center xl:w-96"
-      >
-        <img
-          className="w-auto h-auto"
-          src="https://mulltiply-prod.s3.ap-south-1.amazonaws.com/uploads/2024/01/48e9ddd2-b761-11ee-b10d-694ead45503e.webp"
-          alt="Product"
-        />
+      <div className="mx-4 mt-4 w-40     h-64 bg-red-500  flex justify-center xl:w-96">
+        <img className="w-full h-full object-cover" src={image} alt="Product" />
       </div>
-      <div className="mx-4 my-0 px-1  flex justify-start">
+      <div className="mx-3 my-0 px-1  flex justify-start">
         <p className="py-2 text-sm font-thin">Latest collection Affordable</p>
       </div>
       <div className="mx-3 my-0 px-1  flex justify-start">
-        <h1>Sandal</h1>
+        <h1>{name}</h1>
       </div>
       <div className="mx-3 mt-2 px-1  flex justify-start">
         <div className="flex items-center">
@@ -39,7 +32,7 @@ const Card2 = () => {
         </button>
         {isWishlist ? (
           <RiHeartFill
-            className="h-6 w-8 cursor-pointer text-red-500 transition-colors duration-300 hover:text-gray-500"
+            className="h-6 w-8 cursor-pointer text-red-500 transition-colors duration-300 hover:text-red-500"
             onClick={toggleWishlist}
           />
         ) : (
