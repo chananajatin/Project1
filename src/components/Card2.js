@@ -16,7 +16,7 @@ const Card2 = () => {
       >
         <img
           className="w-auto h-auto"
-          src="https://mulltiply-prod.s3.ap-south-1.amazonaws.com/uploads/2024/01/148a0ef2-b6d7-11ee-b10d-694ead45503e.webp"
+          src="https://mulltiply-prod.s3.ap-south-1.amazonaws.com/uploads/2024/01/48e9ddd2-b761-11ee-b10d-694ead45503e.webp"
           alt="Product"
         />
       </div>
