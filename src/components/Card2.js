@@ -20,12 +20,12 @@ const Card2 = ({ image, name }) => {
   };
 
   return (
-    <div className="m-1">
+    <div className="">
       <div className="mx-4 mt-4 w-40 h-28 bg-red-500  flex justify-center xl:w-96">
         <img className="w-full h-full object-cover" src={image} alt="Product" />
       </div>
       <div className="mx-3 my-0 px-1  flex justify-start">
-        <p className="py-2 text-sm font-thin">Latest collection Affordable</p>
+        <p className="py-2 text-sm font-thin">Latest collection </p>
       </div>
       <div className="mx-3 my-0 px-1  flex justify-start">
         <h1>{name}</h1>
