@@ -8,55 +8,55 @@ const Items2 = () => {
         image={
           "https://mulltiply-prod.s3.ap-south-1.amazonaws.com/uploads/2024/01/48e9ddd2-b761-11ee-b10d-694ead45503e.webp"
         }
-        name={"sandal"}
+        name={"Sandal"}
       />
       <Card2
         image={
           "https://mulltiply-prod.s3.ap-south-1.amazonaws.com/uploads/2024/01/148a0ef2-b6d7-11ee-b10d-694ead45503e.webp"
         }
-        name={"sandal"}
+        name={"Sandal"}
       />
       <Card2
         image={
           "https://mulltiply-prod.s3.ap-south-1.amazonaws.com/uploads/2024/01/3d0fcbfe-b75a-11ee-b10d-694ead45503e.webp"
         }
-        name={"sandal"}
+        name={"Sandal"}
       />
       <Card2
         image={
           "https://mulltiply-prod.s3.ap-south-1.amazonaws.com/uploads/2024/01/48e9ddd2-b761-11ee-b10d-694ead45503e.webp"
         }
-        name={"sandal"}
+        name={"Sandal"}
       />
       <Card2
         image={
           "https://mulltiply-prod.s3.ap-south-1.amazonaws.com/uploads/2024/01/48e9ddd2-b761-11ee-b10d-694ead45503e.webp"
         }
-        name={"sandal"}
+        name={"Sandal"}
       />
       <Card2
         image={
           "https://mulltiply-prod.s3.ap-south-1.amazonaws.com/uploads/2024/01/48e9ddd2-b761-11ee-b10d-694ead45503e.webp"
         }
-        name={"sandal"}
+        name={"Sandal"}
       />
       <Card2
         image={
           "https://mulltiply-prod.s3.ap-south-1.amazonaws.com/uploads/2024/01/48e9ddd2-b761-11ee-b10d-694ead45503e.webp"
         }
-        name={"sandal"}
+        name={"Sandal"}
       />
       <Card2
         image={
           "https://mulltiply-prod.s3.ap-south-1.amazonaws.com/uploads/2024/01/48e9ddd2-b761-11ee-b10d-694ead45503e.webp"
         }
-        name={"sandal"}
+        name={"Sandal"}
       />
       <Card2
         image={
           "https://mulltiply-prod.s3.ap-south-1.amazonaws.com/uploads/2024/01/48e9ddd2-b761-11ee-b10d-694ead45503e.webp"
         }
-        name={"sandal"}
+        name={"Sandal"}
       />
     </div>
   );
