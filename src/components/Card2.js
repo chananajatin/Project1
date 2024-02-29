@@ -21,11 +21,12 @@ const Card2 = ({ image, name }) => {
         setShowSuccessMessage(false);
       }, 2000); // Hide the message after 2 seconds
     }
+    setSelectedSize("");
   };
 
   return (
     <div className="w-auto h-auto m-1 ">
-      <div className="mx-auto mt-4 w-36 h-28 flex justify-center xl:w-96 xl:h-64 relative">
+      <div className="mx-auto mt-4 w-44 h-32 flex justify-center xl:w-96 xl:h-64 relative">
         <img className="w-full h-full object-cover" src={image} alt="Product" />
         {showSuccessMessage && (
           <div className="absolute top-0 left-0 right-0 bottom-0 bg-black bg-opacity-40 flex justify-center items-center">
