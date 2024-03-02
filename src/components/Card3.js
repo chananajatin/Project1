@@ -33,7 +33,7 @@ const Card2 = ({ image, name }) => {
 
   return (
     <div className="w-auto h-auto m-1 ">
-      <div className="mx-auto mt-4 w-40 h-52 flex justify-center xl:w-44 xl:h-64 relative">
+      <div className="mx-auto mt-4 w-44 h-32 flex justify-center xl:w-96 xl:h-64 relative">
         <img className="w-full h-full object-cover" src={image} alt="Product" />
         {showSuccessMessage && (
           <div className="absolute top-0 left-0 right-0 bottom-0 bg-black bg-opacity-40 flex justify-center items-center">
@@ -56,8 +56,9 @@ const Card2 = ({ image, name }) => {
         {[6, 7, 8, 9, 10].map((size) => (
           <button
             key={size}
-            className={`border border-black rounded-sm h-auto w-6 text-xs m-1 ${selectedSize === size ? "bg-gray-300" : ""
-              }`}
+            className={`border border-black rounded-sm h-auto w-6 text-xs m-1 ${
+              selectedSize === size ? "bg-gray-300" : ""
+            }`}
             onClick={() => handleSize(size)}
           >
             {size}
@@ -73,8 +74,9 @@ const Card2 = ({ image, name }) => {
       </div>
       <div className="mx-auto mt-2 flex justify-between items-center">
         <button
-          className={`mr-2 border border-gray-400 px-2 py-1 ${selectedSize ? "" : "opacity-50"
-            }`}
+          className={`mr-2 border border-gray-400 px-2 py-1 ${
+            selectedSize ? "" : "opacity-50"
+          }`}
           onClick={handleAddToCart}
         >
           Add to Cart

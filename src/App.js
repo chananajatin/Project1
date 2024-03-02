@@ -1,5 +1,6 @@
 import React from "react";
 import Items2 from "./components/Items2";
+import Items from "./components/Items";
 const App = () => {
   return (
     <div>
